@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+     .header-bar {
+            background-color: #a8d959;
+            color: white;
+            padding: 10px 0;
+        }
+    
+    
+        .main-content {
+            padding: 20px;
+        }
+        .cart-table img {
+            width: 50px;
+        }
+        .cart-total {
+            border: 1px solid #ddd;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body style="background-color: rgb(220, 223, 245);">
+     <!-- Header -->
+     <div class="header-bar text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-left contact-info">
+                    <span><i class="fas fa-map-marker-alt"></i>Mohakhali, DOSH</span>
+                    <span><i class="fas fa-envelope">(nksmn216@gmail.com)</i></span>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a href="#">Privacy Policy</a> /
+                    <a href="#">Terms of Use</a> /
+                    <a href="#">Sales and Refunds</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: #a8d959;"><h3><b>Fruitables</b></h3></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <div class="main-content container" style="background-color: aquamarine; width: 800px; height: 600px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Cart</h2>
+                <table class="table cart-table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://th.bing.com/th/id/R.3cbf69b042f80e64a404d3e235671899?rik=XDmaxfLlUO51Ug&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f8%2f8a%2fBanana-Single.jpg&ehk=Gn%2br78sS%2bOaQ1nLThXtALRaIiWA8hs9NAfbg3jdLiKs%3d&risl=&pid=ImgRaw&r=0" alt="Big Banana"></td>
+                            <td>Big Banana</td>
+                            <td>৳ 20</td>
+                            <td>
+                                <input type="number" class="form-control" value="1" min="1">
+                            </td>
+                            <td>৳ 20</td>
+                            <td><button class="btn btn-danger btn-sm">x</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://th.bing.com/th/id/R.1746905e79820c611a75f362be285401?rik=Om5Rt8artWAu4A&riu=http%3a%2f%2fwww.valleyspuds.com%2fwp-content%2fuploads%2fRusset-Potatoes-cut.jpg&ehk=%2f9WbC1j%2fDMKQkwnb8Q9l7NfVGeVMrHuQmCWM%2fR9kpg8%3d&risl=&pid=ImgRaw&r=0" alt="Potatoes"></td>
+                            <td>Potatoes</td>
+                            <td>৳ 60</td>
+                            <td>
+                                <input type="number" class="form-control" value="1" min="1">
+                            </td>
+                            <td>৳ 60</td>
+                            <td><button class="btn btn-danger btn-sm">x</button></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://th.bing.com/th/id/R.cde2aa5e5519a2be5f4fcf2cd0854385?rik=6UZ3SA7yU5lDRg&pid=ImgRaw&r=0" alt="Awesome Broccoli"></td>
+                            <td>Awesome Broccoli</td>
+                            <td>৳ 40</td>
+                            <td>
+                                <input type="number" class="form-control" value="1" min="1">
+                            </td>
+                            <td>৳ 40</td>
+                            <td><button class="btn btn-danger btn-sm">x</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="input-group mb-3" style="width: 300px;">
+                    <input type="text" class="form-control" placeholder="Coupon Code">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">Apply Coupon</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-end">
+                    <div class="cart-total bg-success text-white">
+                    <h3>Cart Total</h3>
+                    <p>Subtotal: <span class="justify-content-end">৳ 120.00</span></p>
+                    <p>Shipping: <span class="justify-content-end">Flat rate: ৳ 10.00<br>Shipping to Mohakhali</span></p>
+                    <hr>
+                    <p>Total: <span class="justify-content-end">৳ 110.00</span></p>
+                </div>
+           
+        </div>
+        </div>
+    </div>
+    <div class="footer p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="logo"><b>Fruitables</b></div>
+                    <br>Fresh products: <br>We tried bring all time fresh product</br></p>
+                
+                    <button class="btn subscribe-btn "><a type="read more" href="#">Read more</a></button>
+                </div>
+                <div class="col-md-3">
+                    <h5>Shop Info</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQs & Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Account</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Shop details</a></li>
+                        <li><a href="#">Shopping Cart</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">International Orders</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact</h5>
+                    <p>Address: </p>
+                    <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                    <p>Phone: +880</p>
+                    <p>Payment Accepted
+                    <img src="https://th.bing.com/th/id/OIP.7M_IxB3MvTvnbRB82JC1LAHaEK?rs=1&pid=ImgDetMain" alt="Visa" height="20px">
+                    <img src="https://th.bing.com/th/id/R.16dbc44d8d44fd6157f722a9674e7b07?rik=%2bO8UCRoEpd6aJA&pid=ImgRaw&r=0" alt="MasterCard" height="20px">
+                    <img src="https://th.bing.com/th/id/R.c01292cdd7f51d3520c75031fc479c2b?rik=0qZxmR9AXGhBdw&pid=ImgRaw&r=0" alt="PayPal" height="30px" ></p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <ul class="list-inline social-icons">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© Your Site Name, All rights reserved. <a href="#">Designed By HTML Codex</a> Distributed By <a href="#">ThemeWagon</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
